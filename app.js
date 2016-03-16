@@ -50,3 +50,4 @@ if(liverPool.toUpperCase() === 'YES') {
 console.log('conditional about Man U vs. Liverpool');
 
 alert('Liverpool is scheit!');
+
