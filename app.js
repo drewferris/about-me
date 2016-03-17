@@ -77,9 +77,13 @@ while(favoriteNum !== 16 && numGuesses < 4) {
     alert('your guess ' + favoriteNum + ' is too high');
   } else if (favoriteNum < 16) {
     alert('your guess ' + favoriteNum + ' is too low' );
-  } else if (typeof favoriteNum === 'number') {
+  } else if (isNaN(favoriteNum)) {
+    // they didnt give us a number
+  } else {
+    alert('You guessed my favorite number!');
+    numberCorrectAnswers ++;
   }
   numGuesses ++;
 }
-
+console.log('tell ' + welcomeUser + ' their score');
 alert('Congratulations! You have finished my survey! You got ' + numberCorrectAnswers + ' out of ' + (numberTotalAnswers + numGuesses) + ' correct!' );
