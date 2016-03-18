@@ -48,6 +48,3 @@ if(liverPool.toUpperCase() === 'YES') {
   var whyNot = prompt('Why the f not?');
 }
 console.log('conditional about Man U vs. Liverpool');
-
-alert('Liverpool is scheit!');
-
